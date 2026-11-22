@@ -99,6 +99,17 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 .mq-item .ph{width:34px;height:34px;border-radius:50%;padding:0;font-size:7px}
 @keyframes mq{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+.hero2{position:relative;overflow:hidden;min-height:760px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center}
+.hero2-img{position:absolute;top:0;bottom:0;left:0;width:52%;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent);}
+.hero2-img>*{width:100%;height:100%;object-fit:cover;object-position:40% 30%}
+.vf{position:relative;padding:28px 34px}
+.vf i{position:absolute;width:30px;height:30px;border:0 solid #FFD400}
+.vf i:nth-child(1){top:0;left:0;border-top-width:3px;border-left-width:3px}
+.vf i:nth-child(2){top:0;right:0;border-top-width:3px;border-right-width:3px}
+.vf i:nth-child(3){bottom:0;left:0;border-bottom-width:3px;border-left-width:3px}
+.vf i:nth-child(4){bottom:0;right:0;border-bottom-width:3px;border-right-width:3px}
+.vf b{position:absolute;top:50%;left:-7px;width:14px;height:14px;margin-top:-7px;border-radius:50%;border:2px solid #FFD400}
+@media (max-width:768px){.hero2{grid-template-columns:1fr;min-height:0}.hero2-img{position:relative;width:100%;height:420px;-webkit-mask-image:linear-gradient(0deg,transparent,#000 35%);mask-image:linear-gradient(0deg,transparent,#000 35%)}.vf b{display:none}}
 </style>
 </head>
 <body>
@@ -118,25 +129,27 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 </header>
 
 <main>
-<section style="position:relative;overflow:hidden;min-height:680px;display:flex;align-items:center;justify-content:center">
-<div class="ph" aria-hidden="true" style="position:absolute;top:0;right:0;bottom:0;left:0;align-items:flex-end;justify-content:flex-end;padding:20px 24px;font-size:13px">FOTOGRAFIJA: LUKA SA KAMEROM NA 18. ROĐENDANU (POZADINA, PUNA ŠIRINA)</div>
-<div aria-hidden="true" style="position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,rgba(18,18,18,.5) 0%,rgba(18,18,18,.78) 100%)"></div>
-<div class="wrap" style="position:relative;padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
+<section class="hero2">
+<div class="hero2-img" aria-hidden="true"><div class="ph" style="font-size:13px">FOTOGRAFIJA: LUKA SA KAMEROM, OBJEKTIV KA NASLOVU</div></div>
+<div aria-hidden="true"></div>
+<div class="wrap" style="position:relative;width:100%;box-sizing:border-box;padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin:0">
 <div class="soft bl pill" style="display:inline-flex;align-items:center;gap:14px;padding:8px 20px 8px 8px"><span class="avs" aria-hidden="true"><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span></span><span style="font-size:15px;font-weight:700"><strong class="num">300+</strong> videa za kreatore i brendove</span></div>
-<h1 class="display" style="max-width:14ch">Fotograf i videograf u Novom Sadu</h1>
-<p class="lead" style="max-width:48ch">Fotografišem 18. rođendane i proslave. Snimam videe za brendove i kreatore.</p>
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px"><a class="btn btn-p" href="kontakt.html">Zakaži termin</a><a class="btn" href="#radovi">Pogledaj radove</a></div>
+<div class="vf"><i></i><i></i><i></i><i></i><b aria-hidden="true"></b>
+<h1 class="display" style="max-width:12ch">Fotograf i videograf u Novom Sadu</h1>
+</div>
+<p class="lead" style="max-width:44ch">Fotografišem 18. rođendane i proslave. Snimam videe za brendove i kreatore.</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:flex-start;gap:16px"><a class="btn btn-p" href="kontakt.html">Zakaži termin</a><a class="btn" href="#radovi">Pogledaj radove</a></div>
 </div>
 </section>
 
 <section class="wrap" style="padding-top:48px;padding-bottom:24px" aria-label="Klijenti">
-<p style="text-align:center;font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#A8A8A8;margin-bottom:24px">Radio sam sa</p>
-<div class="mq"><div class="mq-track" style="padding:12px 20px 12px 0"><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Trenerica za mame</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Igrapregleda</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Libero Pizza</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Original Wear</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Stefan Gajić</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Aleksa Ivković</span><span aria-hidden="true" style="display:contents"><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Trenerica za mame</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Igrapregleda</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Libero Pizza</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Original Wear</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Stefan Gajić</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Aleksa Ivković</span></span></div></div>
+
+<div class="mq"></div>
 </section>
 
 <section class="wrap sec">
 <div class="g2">
-<div class="soft bl organic" style="padding:14px"><div class="ph organic" style="aspect-ratio:1">FOTOGRAFIJA: PORTRET LUKE</div></div>
+<div class="soft bl organic" style="padding:14px"><img class="organic" src="/_blob/9b82254a2c5ad5f693f71469aba7075c" alt="Luka Vučić, fotograf i videograf iz Novog Sada" style="display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 18%"></div>
 <div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
 <h2 class="h1">Mlad sam. To je prednost.</h2>
 <p class="lead">Znam koja slika ide na story, a koja u ram kod bake.<br>Na tvom slavlju sam deo ekipe.</p>
@@ -275,30 +288,30 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <div class="soft bl rxl" style="padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:40px">
 <div class="inset bl rd" style="padding:clamp(22px,3vw,32px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
 <div style="display:flex;flex-direction:column;gap:4px"><p style="font-weight:800;font-size:clamp(22px,2.4vw,28px);color:#F1E8DC">Imaš datum? Javi se.</p><p class="mut">Javljam ti cenu u što kraćem roku.</p></div>
-<div style="display:flex;flex-wrap:wrap;gap:14px"><a class="btn" href="tel:" style="color:#FFD400"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>[TELEFON]</a><a class="btn btn-p" href="kontakt.html" style="color:#F1E8DC">Zakaži termin</a></div>
+<div style="display:flex;flex-wrap:wrap;gap:14px"><a class="btn" href="tel:" style="color:#FFD400"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>[TELEFON]</a><a class="btn btn-p" href="kontakt.html" style="color:#F1E8DC">Zakaži termin</a></div>
 </div>
 <div class="ftg">
 <div style="display:flex;flex-direction:column;gap:16px">
 <a href="index.html" style="display:flex;align-items:center;gap:12px;color:#F1E8DC;font-weight:800;font-size:22px"><span class="icon soft bl" aria-hidden="true" style="width:46px;height:46px"><span style="width:16px;height:16px;border-radius:50%;background:#FFD400"></span></span>Luka Vučić</a>
 <p class="mut" style="max-width:32ch">Fotografišem 18. rođendane i proslave. Snimam video za kreatore i brendove. Novi Sad i okolina.</p>
 <div style="display:flex;gap:12px">
-<a class="soc" href="https://www.instagram.com/luka.vucicc_/" aria-label="Instagram @luka.vucicc_"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
-<a class="soc" href="#" aria-label="TikTok [TIKTOK PROFIL]"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.6 2.4 4.5 5 5"/></svg></a>
-<a class="soc" href="mailto:vucich.luka.business@gmail.com" aria-label="Pošalji mejl"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
+<a class="soc" href="https://www.instagram.com/luka.vucicc_/" aria-label="Instagram @luka.vucicc_"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a>
+<a class="soc" href="#" aria-label="TikTok [TIKTOK PROFIL]"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3c.5 2.6 2.4 4.5 5 5"></path></svg></a>
+<a class="soc" href="mailto:vucich.luka.business@gmail.com" aria-label="Pošalji mejl"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 7 10-7"></path></svg></a>
 </div>
 </div>
 <nav aria-label="Stranice"><h3>Stranice</h3><ul><li><a href="index.html">Početna</a></li><li><a href="foto.html">Foto</a></li><li><a href="video.html">Video</a></li><li><a href="o-meni.html">O meni</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></nav>
 <div><h3>Usluge</h3><ul><li><a href="foto.html">18. rođendani</a></li><li><a href="foto.html">Proslave</a></li><li><a href="video.html">Video za brendove</a></li><li><a href="video.html">Snimanje predavanja</a></li><li><a href="video.html">Montaža</a></li></ul></div>
 <div><h3>Kontakt</h3><ul class="ftc">
-<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:">[TELEFON]</a></li>
-<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg><a href="mailto:vucich.luka.business@gmail.com" style="word-break:break-all">vucich.luka.business@gmail.com</a></li>
-<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="mut">[RADNO VREME]</span></li>
-<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="mut">Novi Sad i okolina</span></li>
+<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg><a href="tel:">[TELEFON]</a></li>
+<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 7 10-7"></path></svg><a href="mailto:vucich.luka.business@gmail.com" style="word-break:break-all">vucich.luka.business@gmail.com</a></li>
+<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span class="mut">[RADNO VREME]</span></li>
+<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span class="mut">Novi Sad i okolina</span></li>
 </ul></div>
 </div>
 <div style="border-top:1px solid #1F1F1F;padding-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
 <p class="mut" style="font-size:14px">© 2026 Luka Vučić. Fotografija i video, Novi Sad.</p>
-<a class="soc" href="#" aria-label="Nazad na vrh" style="width:44px;height:44px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+<a class="soc" href="#" aria-label="Nazad na vrh" style="width:44px;height:44px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></a>
 </div>
 </div>
 </footer>
