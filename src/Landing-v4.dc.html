@@ -99,22 +99,23 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 .mq-item .ph{width:34px;height:34px;border-radius:50%;padding:0;font-size:7px}
 @keyframes mq{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
-.hero2{position:relative;overflow:hidden;min-height:760px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center}
-.hero2-img{position:absolute;top:0;bottom:0;left:0;width:52%;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent);}
+.hero2{position:relative;overflow:hidden;min-height:860px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center}
+.hero2-img{position:absolute;top:0;bottom:0;right:0;width:52%;-webkit-mask-image:linear-gradient(270deg,#000 55%,transparent);mask-image:linear-gradient(270deg,#000 55%,transparent);}
+.hero2-img img{transform:scaleX(-1)}
 .hero2-img>*{width:100%;height:100%;object-fit:cover;object-position:40% 30%}
-.vf{position:relative;padding:28px 34px}
-.vf i{position:absolute;width:30px;height:30px;border:0 solid #FFD400}
-.vf i:nth-child(1){top:0;left:0;border-top-width:3px;border-left-width:3px}
-.vf i:nth-child(2){top:0;right:0;border-top-width:3px;border-right-width:3px}
-.vf i:nth-child(3){bottom:0;left:0;border-bottom-width:3px;border-left-width:3px}
-.vf i:nth-child(4){bottom:0;right:0;border-bottom-width:3px;border-right-width:3px}
-.vf b{position:absolute;top:50%;left:-7px;width:14px;height:14px;margin-top:-7px;border-radius:50%;border:2px solid #FFD400}
-@media (max-width:768px){.hero2{grid-template-columns:1fr;min-height:0}.hero2-img{position:relative;width:100%;height:420px;-webkit-mask-image:linear-gradient(0deg,transparent,#000 35%);mask-image:linear-gradient(0deg,transparent,#000 35%)}.vf b{display:none}}
+@media (max-width:768px){.hero2{grid-template-columns:1fr;min-height:0}.hero2-img{position:relative;width:100%;height:420px;-webkit-mask-image:linear-gradient(0deg,transparent,#000 35%);mask-image:linear-gradient(0deg,transparent,#000 35%)}}
+/* svi CTA isti oblik: pill, ista visina i slova */
+.btn,.btn-p{border-radius:2rem;min-height:52px;padding:0 28px;font:800 16px 'Nunito Sans',sans-serif}
+.hdr-over{position:absolute;top:0;left:0;right:0;z-index:20}
+.hdr-over .pills a{background:rgba(18,18,18,.5);border-color:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:4px 4px 10px rgba(0,0,0,.45),-2px -2px 8px rgba(255,255,255,.05)}
+.hdr-over .pills .act{background:rgba(18,18,18,.78);box-shadow:inset 2px 2px 5px rgba(0,0,0,.6),inset -2px -2px 6px rgba(255,255,255,.06)}
+.hdr-over>a:first-child{text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.hero2::before{content:"";position:absolute;top:0;left:0;right:0;height:220px;background:linear-gradient(180deg,rgba(18,18,18,.85),transparent);z-index:1;pointer-events:none}
 </style>
 </helmet>
 <div>
 
-<header class="wrap" style="padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<header class="wrap hdr-over" style="padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
 <a href="Landing-v4.dc.html" style="display:flex;align-items:center;gap:12px;color:#F1E8DC;font-weight:800;font-size:20px"><span class="icon soft bl" aria-hidden="true" style="width:46px;height:46px"><span style="width:16px;height:16px;border-radius:50%;background:#FFD400"></span></span>Luka Vučić</a>
 <nav class="pills links" aria-label="Glavna navigacija">
 <a class="act" aria-current="page" href="Landing-v4.dc.html">Početna</a>
@@ -129,32 +130,18 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <main>
 <section class="hero2">
 <div class="hero2-img"><img src="/_blob/74036e9d6555bd1ae1ffdf8d90f431ca" alt="Luka Vučić fotografiše na 18. rođendanu" style="object-position:50% 22%"></div>
-<div aria-hidden="true"></div>
-<div class="wrap" style="position:relative;width:100%;box-sizing:border-box;padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin:0">
+<div class="wrap" style="position:relative;width:100%;box-sizing:border-box;padding-top:170px;z-index:2;padding-bottom:96px;padding-left:max(20px,calc((100vw - 1100px) / 2));display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin:0">
 <div class="soft bl pill" style="display:inline-flex;align-items:center;gap:14px;padding:8px 20px 8px 8px"><span class="avs" aria-hidden="true"><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span></span><span style="font-size:15px;font-weight:700"><strong class="num">300+</strong> videa za kreatore i brendove</span></div>
-<div class="vf"><i></i><i></i><i></i><i></i><b aria-hidden="true"></b>
 <h1 class="display" style="max-width:12ch">Fotograf i videograf u Novom Sadu</h1>
-</div>
-<p class="lead" style="max-width:44ch">Fotografišem 18. rođendane i proslave. Snimam videe za brendove i kreatore.</p>
+<p class="lead" style="max-width:44ch">Fotografišem 18. rođendane i proslave. <br>Snimam videe za brendove i kreatore.</p>
 <div style="display:flex;flex-wrap:wrap;justify-content:flex-start;gap:16px"><a class="btn btn-p" href="Kontakt.dc.html">Zakaži termin</a><a class="btn" href="#radovi">Pogledaj radove</a></div>
 </div>
+<div aria-hidden="true"></div>
 </section>
 
 <section class="wrap" style="padding-top:48px;padding-bottom:24px" aria-label="Klijenti">
 
 <div class="mq"></div>
-</section>
-
-<section class="wrap sec">
-<div class="g2">
-<div class="soft bl organic" style="padding:14px"><img class="organic" src="/_blob/9b82254a2c5ad5f693f71469aba7075c" alt="Luka Vučić, fotograf i videograf iz Novog Sada" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: 50% 18%"></div>
-<div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
-<h2 class="h1">Mlad sam. To je prednost.</h2>
-<p class="lead">Znam koja slika ide na story, a koja u ram kod bake.<br>Na tvom slavlju sam deo ekipe.</p>
-<p class="mut">Za video imam <strong class="num">2 godine</strong> u marketingu i <strong class="num">300+</strong> <br>snimljenih short form videa.</p>
-<a class="btn" href="O-meni.dc.html">Više o meni</a>
-</div>
-</div>
 </section>
 
 <section id="radovi" class="wrap sec">
@@ -202,7 +189,19 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 </div>
 </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:56px;text-align:center"><div class="inset bl rd stat"><b>2</b><span class="mut">godine u marketingu</span></div><div class="inset bl rd stat"><b>300+</b><span class="mut">kratkih videa za klijente</span></div><div class="inset bl rd stat"><b>4</b><span class="mut">klijenta iznad</span></div></div>
+</section><section class="wrap sec">
+<div class="g2">
+<div class="soft bl organic" style="padding:14px"><div class="organic" style="overflow:hidden;aspect-ratio:1;background:#D9DAE0"><img src="/_blob/9b82254a2c5ad5f693f71469aba7075c" alt="Luka Vučić, fotograf i videograf iz Novog Sada" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 2%"></div></div>
+<div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+<h2 class="h1">Mlad sam. <br>To je prednost.</h2>
+<p class="lead">Znam koja slika ide na story, a koja u ram kod bake.<br>Na tvom slavlju sam deo ekipe.</p>
+<p class="mut">Za video imam <strong class="num">2 godine</strong> u marketingu i <strong class="num">300+</strong> <br>snimljenih short i long form videa.</p>
+<a class="btn" href="O-meni.dc.html">Više o meni</a>
+</div>
+</div>
 </section>
+
+
 
 <section class="wrap sec" id="usluge">
 <div style="text-align:center;margin-bottom:48px;display:flex;flex-direction:column;align-items:center;gap:14px">
@@ -231,7 +230,7 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 </sc-if>
 <sc-if value="{{isVideo}}" hint-placeholder-val="{{false}}">
 <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
-<h3 style="font-size:clamp(34px,3.6vw,46px)">Kamerman za kreatore i brendove</h3>
+<h3 style="font-size:clamp(34px,3.6vw,46px)">Kamerman za <br>kreatore i brendove</h3>
 <p class="mut" style="font-size:21px;line-height:1.6">Ti vodiš klijenta i ideju. Ja dolazim na teren sa profesionalnom opremom i snimam onako kako si zamislio.</p>
 <p style="font-weight:800;font-size:28px;color:#F1E8DC">Javi mi se i dogovaramo snimanje.</p>
 <a class="btn" href="Video.dc.html">Šta je uključeno</a>
@@ -250,7 +249,7 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <ul class="list" style="flex-grow:1">
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Doček, torta, podijum i društvo</li>
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Portreti slavljenika</li>
-<li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Oko <strong class="num">100</strong> obrađenih fotografija</li>
+<li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>Broj obrađenih fotografija zavisi od broja gostiju (minimalno <strong class="num">150</strong>)</span></li>
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Fotografije šaljem u roku od par dana</li>
 </ul>
 <a class="btn btn-p" href="Kontakt.dc.html">Zakaži fotografisanje</a>
@@ -260,7 +259,8 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <div style="text-align:center;padding-top:12px"><h3 style="font-size:24px">Video</h3><p class="mut">Kamerman za kreatore i brendove</p><p style="font-weight:800;font-size:30px;color:#FFD400;line-height:1.3;margin-top:18px">Javi mi se</p></div>
 <div class="soft bl rd" style="padding:24px;display:flex;flex-direction:column;gap:20px;flex-grow:1">
 <ul class="list" style="flex-grow:1">
-<li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Reklame i kratki video za Instagram i TikTok</li>
+<li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>Reklame i kratki video <br>za Instagram i TikTok</span></li>
+<li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>Long form videi</span></li>
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Događaji i žurke</li>
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Predavanja</li>
 <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Profesionalna oprema</li>
@@ -276,7 +276,7 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <section class="wrap sec">
 <div class="soft bl rxl" style="padding:clamp(32px,5vw,64px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px">
 <h2 class="h1">Znaš šta ti treba?</h2>
-<p class="lead" style="max-width:46ch">Pošalji mi datum i mesto, a ja ti javljam cenu u što kraćem roku.</p>
+<p class="lead" style="max-width:46ch">Pošalji mi datum i mesto, a ja ti <br>javljam cenu u što kraćem roku.</p>
 <a class="btn btn-p" href="Kontakt.dc.html">Zakaži termin</a>
 </div>
 </section>
