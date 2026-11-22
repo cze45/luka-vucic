@@ -13,7 +13,7 @@ PAGES = {
 }
 
 # design asset store url -> file committed in img/
-ASSETS = {'/_blob/9b82254a2c5ad5f693f71469aba7075c': 'img/luka-portret.jpg'}
+ASSETS = {'/_blob/9b82254a2c5ad5f693f71469aba7075c': 'img/luka-portret.jpg', '/_blob/74036e9d6555bd1ae1ffdf8d90f431ca': 'img/luka-kamera.jpg'}
 
 for src_name, (out_name, desc) in PAGES.items():
     s = open(os.path.join(SRC, src_name), encoding='utf-8').read()
