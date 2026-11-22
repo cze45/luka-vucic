@@ -89,6 +89,16 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 .ftc svg{flex:none;margin-top:4px}
 @media (max-width:900px){.ftg{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.ftg{grid-template-columns:1fr}}
+.avs{display:flex}
+.avs span{width:40px;height:40px;border-radius:50%;margin-left:-12px;border:2px solid #121212;font-size:8px;padding:0}
+.avs span:first-child{margin-left:0}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq-track{display:flex;gap:20px;width:max-content;animation:mq 32s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq-item{display:inline-flex;align-items:center;gap:12px;padding:14px 26px;border-radius:2rem;white-space:nowrap;font-weight:800;color:#E9E2D6}
+.mq-item .ph{width:34px;height:34px;border-radius:50%;padding:0;font-size:7px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
 </style>
 </helmet>
 <div>
@@ -110,10 +120,16 @@ details p{padding:0 24px 24px;color:#A8A8A8;max-width:60ch}
 <div class="ph" aria-hidden="true" style="position:absolute;top:0;right:0;bottom:0;left:0;align-items:flex-end;justify-content:flex-end;padding:20px 24px;font-size:13px">FOTOGRAFIJA: LUKA SA KAMEROM NA 18. ROĐENDANU (POZADINA, PUNA ŠIRINA)</div>
 <div aria-hidden="true" style="position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,rgba(18,18,18,.5) 0%,rgba(18,18,18,.78) 100%)"></div>
 <div class="wrap" style="position:relative;padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
+<div class="soft bl pill" style="display:inline-flex;align-items:center;gap:14px;padding:8px 20px 8px 8px"><span class="avs" aria-hidden="true"><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span><span class="ph inset">KLIJENT</span></span><span style="font-size:15px;font-weight:700"><strong class="num">300+</strong> videa za kreatore i brendove</span></div>
 <h1 class="display" style="max-width:14ch">Fotograf i videograf u Novom Sadu</h1>
 <p class="lead" style="max-width:48ch">Fotografišem 18. rođendane i proslave. Snimam videe za brendove i kreatore.</p>
-<a class="btn btn-p" href="Kontakt.dc.html">Zakaži termin</a>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px"><a class="btn btn-p" href="Kontakt.dc.html">Zakaži termin</a><a class="btn" href="#radovi">Pogledaj radove</a></div>
 </div>
+</section>
+
+<section class="wrap" style="padding-top:48px;padding-bottom:24px" aria-label="Klijenti">
+<p style="text-align:center;font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#A8A8A8;margin-bottom:24px">Radio sam sa</p>
+<div class="mq"><div class="mq-track" style="padding:12px 20px 12px 0"><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Trenerica za mame</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Igrapregleda</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Libero Pizza</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Original Wear</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Stefan Gajić</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Aleksa Ivković</span><span aria-hidden="true" style="display:contents"><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Trenerica za mame</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Igrapregleda</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Libero Pizza</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Original Wear</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Stefan Gajić</span><span class="soft bl mq-item"><span class="ph inset">LOGO</span>Aleksa Ivković</span></span></div></div>
 </section>
 
 <section class="wrap sec">
