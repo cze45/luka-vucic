@@ -12,6 +12,9 @@ PAGES = {
     'Kontakt.dc.html': ('kontakt.html', 'Zakaži fotografisanje ili snimanje u Novom Sadu. Pozovi ili pošalji upit, a cenu ti javljam u što kraćem roku.'),
 }
 
+# design asset store url -> file committed in img/
+ASSETS = {'/_blob/9b82254a2c5ad5f693f71469aba7075c': 'img/luka-portret.jpg'}
+
 for src_name, (out_name, desc) in PAGES.items():
     s = open(os.path.join(SRC, src_name), encoding='utf-8').read()
     title = re.search(r'<title>(.*?)</title>', s, re.S).group(1).strip()
@@ -22,6 +25,8 @@ for src_name, (out_name, desc) in PAGES.items():
     logic = m.group(1).strip() if m else 'class Component extends DCLogic { renderVals() { return {}; } }'
     for a, (b, _) in PAGES.items():
         body = body.replace('href="%s' % a, 'href="%s' % b)
+    for blob, local in ASSETS.items():
+        body = body.replace(blob, local)
     body = body.replace('</script', '<\\/script')
     html = '''<!doctype html>
 <html lang="sr">
