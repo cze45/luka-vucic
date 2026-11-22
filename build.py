@@ -39,7 +39,7 @@ for src_name, (out_name, desc) in PAGES.items():
 <html lang="sr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>%s</title>
 <meta name="description" content="%s">
 <meta property="og:title" content="%s">
